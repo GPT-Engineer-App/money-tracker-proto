@@ -129,7 +129,7 @@ const Index = () => {
       <Box bg="gray.800" minH="100vh" color="white">
         <Flex>
           <Box w="250px" p={5}>
-            <Heading size="md" mb={5}>
+            <Heading size="md" mb={5} color="white">
               PFM Dashboard
             </Heading>
             <VStack align="stretch" spacing={4}>
@@ -138,10 +138,10 @@ const Index = () => {
           </Box>
           <Divider orientation="vertical" />
           <Box flex="1" p={5}>
-            <Heading size="lg" mb={5}>
+            <Heading size="lg" mb={5} color="white">
               Transactions
             </Heading>
-            <Button leftIcon={<FaPlus />} colorScheme="teal" onClick={handleAddTransaction}>
+            <Button leftIcon={<FaPlus />} colorScheme="teal" variant="outline" onClick={handleAddTransaction}>
               Add Transaction
             </Button>
             <Box mt={5}>{transactionTable}</Box>
