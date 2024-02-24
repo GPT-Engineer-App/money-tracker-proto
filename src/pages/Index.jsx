@@ -63,10 +63,12 @@ const Index = () => {
       <Tbody>
         {transactions.map((transaction) => (
           <Tr key={transaction.id}>
-            <Td>{transaction.date}</Td>
-            <Td isNumeric>{transaction.amount}</Td>
-            <Td>{transaction.type}</Td>
-            <Td>{transaction.category}</Td>
+            <Td color="white">{transaction.date}</Td>
+            <Td isNumeric color="white">
+              {transaction.amount}
+            </Td>
+            <Td color="white">{transaction.type}</Td>
+            <Td color="white">{transaction.category}</Td>
             <Td>
               <Button size="sm" onClick={() => handleEditTransaction(transaction)}>
                 <FaEdit />
